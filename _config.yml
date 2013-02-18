@@ -52,6 +52,9 @@ navigation:
 - text: Clients
   url: /clients.html
   section: clients
+- text: FAQ
+  url: /faq.html
+  section: faq
 
 aliases:
   s_nakamoto: Satoshi Nakamoto
