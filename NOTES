@@ -1,0 +1,25 @@
+RUNNING THE SITE LOCALLY
+
+This site is compiled by a tool called Jekyll into files in _site. To install
+Jekyll you need RubyGems and then run "gem install jekyll" as root.
+Unfortunately this is very likely to not work properly (at least on MacOS) and
+leave you with a non-functioning install that complaints at startup about
+missing modules. Just use "gem install" on them in sequence. If it whinges
+about a program called "lessc" know that the correct gem to install is actually
+called "less". It's a CSS language extension compiler.
+
+You can start jekyll like this:
+
+  jekyll --server --auto
+
+It listens on port 4000.
+
+Jekyll is extremely slow. The first time you run it, it will start listening
+on port 4000 but serve 404s for anything you try. Go get a cup of tea, come
+back and try again.
+
+It will watch your directory so when you edit a file, wait a bit and the 
+changes will be reflected in your browser when you refresh automatically.
+
+If you modify _config.yaml it will delete everything and you have to wait
+for it to regenerate again.
